@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Runpex プライバシーポリシー</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAFAF7;--card:#FFFFFF;--text:#171717;--sub:#6B6B63;--border:#E6E6E0;--accent:#D83A2E;--route:#4B6B3C}
+@media (prefers-color-scheme:dark){:root{--bg:#121310;--card:#1B1C18;--text:#F2F2EE;--sub:#A3A39A;--border:#2E2F29;--accent:#FF5A4C;--route:#8DB57A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.8;-webkit-text-size-adjust:100%}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:flex-start;gap:3px;margin-bottom:28px}
+.logo{font-family:Poppins,sans-serif;font-weight:600;font-size:26px;letter-spacing:-1px;color:var(--text);text-decoration:none}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);margin-top:9px}
+h1{font-size:26px;line-height:1.4;margin:0 0 8px}
+h2{font-size:19px;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--border)}
+h3{font-size:16px;margin:20px 0 4px}
+p,li{font-size:15px}
+.table{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--border)}
+th{color:var(--sub);font-weight:600}
+tr:last-child td{border-bottom:none}
+a{color:var(--route)}
+footer{margin-top:48px;color:var(--sub);font-size:13px}
+</style></head>
+<body><main><header><a class="logo" href="../">runpex</a><span class="dot"></span></header>
+<h1>Runpex プライバシーポリシー</h1>
+<p>制定日：2026年10月8日</p>
+<p>Runpex（以下「本アプリ」）は、ランニングのコース作成・音声ナビ・記録のためのアプリです。本アプリの運営者（以下「運営者」）は、利用者の情報を次のとおり取り扱います。</p>
+<h2>1. 取得する情報と使い道</h2>
+<h3>端末の中だけに保存する情報</h3>
+<p>次の情報は利用者の端末の中に保存し、運営者のサーバーには送りません（「3. 友達機能を使う場合」を除きます）。</p>
+<ul>
+<li><strong>位置情報</strong>：ナビやフリーランで走っている間に取得し、現在地の表示、曲がり角の案内、距離・ペースの計測、走った道の記録に使います。このほか、コースを作る画面などを開いたときに、地図を現在地に合わせるため1回だけ取得します。それ以外のときは取得しません。</li>
+<li><strong>走った記録</strong>：日時、距離、タイム、1kmごとのラップ、走った道の軌跡、走り始めた場所の天気、ナビの読み上げの記録</li>
+<li><strong>作ったコース</strong>と<strong>アプリの設定</strong></li>
+</ul>
+<h3>画面をロックしているときの位置情報</h3>
+<p>ナビやフリーランの途中で画面をロックしたり、別のアプリに切り替えたりしても案内を続けるため、走っている間はバックグラウンドで位置情報を取得します。走り終えるか、ナビを終了すると取得をやめます。</p>
+<h2>2. 外部のサービスに送る情報</h2>
+<p>本アプリは、次の機能のために外部のサービスへ情報を送ります。いずれも位置に関する情報を含みますが、利用者の名前やメールアドレスは送りません。</p>
+<div class="table"><table><thead><tr><th>送り先</th><th>送る情報</th><th>目的</th></tr></thead><tbody><tr><td>Apple（地図）</td><td>地図に表示している範囲</td><td>地図の表示</td></tr><tr><td>FOSSGIS e.V. が運営する OpenStreetMap のルート計算サーバー（routing.openstreetmap.de）</td><td>コースの経由点の座標</td><td>道路に沿ったコースの計算</td></tr><tr><td>国土地理院（標高タイル）</td><td>コース周辺の地図タイルの位置</td><td>高低差の計算</td></tr><tr><td>Open-Meteo</td><td>コース上の地点の座標、走り始めた場所（約100m単位）と日時</td><td>高低差の計算（国土地理院のデータが無い場所のみ）、気温・湿度の取得</td></tr><tr><td>OpenStreetMap の検索サーバー（Overpass API の公開サーバー）</td><td>コースを囲む範囲（四角形の範囲のみ）</td><td>コース沿いの信号の数の目安</td></tr></tbody></table></div>
+<h2>3. 友達機能を使う場合</h2>
+<p>友達機能（ログイン）を使うと、次の情報を運営者が利用するクラウドサービス Supabase のサーバーに保存します。ログインしなくても、友達機能以外はすべて使えます。</p>
+<ul>
+<li><strong>メールアドレス</strong>：ログインのためのコードを送るために使います。他の利用者には表示しません。</li>
+<li><strong>プロフィール</strong>（ユーザー名、表示名、週の目標距離）：友達の検索とランキングに使います。ログインしている利用者は、ユーザー名で検索して表示名を見ることができます。</li>
+<li><strong>走った記録</strong>（日時、タイム、距離、ラップ、コース名、走った道の軌跡）：友達に見せるため、ランキングの集計のために使います。</li>
+<ul>
+<li><strong>自宅の場所が分からないよう、軌跡のスタートとゴールの周り200mは取り除いてから送ります。</strong></li>
+<li>記録を見られるのは、友達として承認した相手だけです。</li>
+</ul>
+<li><strong>友達関係</strong>と、友達に送ったコース</li>
+</ul>
+<h2>4. 第三者への提供</h2>
+<p>運営者は、法令に基づく場合を除き、利用者の情報を第三者に販売・提供しません。広告や行動追跡（トラッキング）のための仕組みは使っていません。</p>
+<h2>5. 情報の削除</h2>
+<ul>
+<li><strong>アカウントの削除</strong>：アプリの「友達 → 設定 → アカウントを削除」から、サーバーに保存したプロフィール・記録・友達関係・送ったコースをすべて削除できます。</li>
+<li><strong>端末の中の情報</strong>：記録やコースはアプリの中で個別に削除できます。アプリを削除すると、端末の中の情報もすべて消えます。</li>
+</ul>
+<h2>6. テスト版（TestFlight）について</h2>
+<p>テスト版では、利用者が TestFlight から送ったフィードバック（コメント・スクリーンショット）とクラッシュの情報を、Apple を通じて運営者が受け取ります。</p>
+<h2>7. 変更</h2>
+<p>このポリシーを変更するときは、このページで知らせます。</p>
+<h2>8. お問い合わせ</h2>
+<p><a href="mailto:runpex.app@gmail.com">runpex.app@gmail.com</a></p>
+<footer>© 2026 Runpex</footer></main></body></html>
